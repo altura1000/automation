@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 import { SKILL_BADGES } from '@/lib/content'
 
+
+import tomerImage from '@/public/tomer.jpeg'
+
 export function AboutSection() {
   return (
     <section
@@ -33,7 +36,7 @@ function AboutPortrait() {
         <div className="grid grid-cols-[1fr_42px] gap-4 sm:grid-cols-[1fr_56px]">
           <div className="relative overflow-hidden bg-[#172338]">
             <Image
-              src="/tomer.jpeg"
+              src={tomerImage}
               alt="תומר, מפתח Full-Stack ופתרונות אוטומציה"
               width={900}
               height={1100}
